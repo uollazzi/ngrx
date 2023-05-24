@@ -1,0 +1,10 @@
+<div *ngIf="todo">
+  <div class="list-group-item">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{todo.text}}</h5>
+      <small>{{todo.createdAt | date:"full"}}</small>
+    </div>
+    <button class="btn btn-primary" (click)="completa()">{{todo.completed ? 'Completa':
+      'Riattiva'}}</button>
+  </div>
+</div>

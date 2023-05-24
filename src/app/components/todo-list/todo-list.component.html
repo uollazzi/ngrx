@@ -1,0 +1,10 @@
+<div class="list-group" *ngIf="!(isLoading$ | async) && !(error$ | async)">
+  <app-todo-preview *ngFor="let t of todos$ | async" [todo]="t"></app-todo-preview>
+</div>
+<div *ngIf="isLoading$ | async">
+  Caricamento in corso...
+</div>
+<div *ngIf="error$ | async as error">
+  {{ error }}
+</div>
+<button class="btn btn-primary" (click)="load()">Ricarica</button>

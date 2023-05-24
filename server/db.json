@@ -1,4 +1,35 @@
 {
   "users": [],
-  "todos": []
+  "todos": [
+    {
+      "id": 1,
+      "text": "Fare la spesa",
+      "createdAt": 1684903872,
+      "completed": false
+    },
+    {
+      "id": 2,
+      "text": "Portare fuori il cane",
+      "createdAt": 1684813872,
+      "completed": true
+    },
+    {
+      "id": 3,
+      "text": "Lavare la macchina",
+      "createdAt": 1684713872,
+      "completed": true
+    },
+    {
+      "id": 4,
+      "text": "Pagare le bollette",
+      "createdAt": 1684613872,
+      "completed": true
+    },
+    {
+      "id": 5,
+      "text": "Chiamare mamma",
+      "createdAt": 1684513872,
+      "completed": true
+    }
+  ]
 }
